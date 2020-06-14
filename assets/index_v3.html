@@ -27,6 +27,17 @@
             </template>
         </div>
     </div>
+</body>
+
+<script>
+    document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 32) {
+        var box = document.getElementById("messageBox");
+        box.style.visibility="hidden";
+    }
+};
+</script>
   <script>
     const PAGE_CONF_SET = 110
     const PAGE_CONF_GET = 111
@@ -151,5 +162,4 @@
       updateSelected()
     }
   </script>
-</body>
 </html>
